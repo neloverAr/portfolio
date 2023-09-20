@@ -128,6 +128,9 @@
     .section{
       flex-direction: column;
     }
+    .hire{
+      margin-top: 15px;
+    }
    .see{
       margin-top: 15px;
     }
