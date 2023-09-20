@@ -96,9 +96,13 @@
 
   .see{
     background-color: var(--white);
-    box-shadow: #008AA9;
     color: var(--secondary);
     
+  }
+
+  .see:hover{
+    background-color: var(--secondary);
+    color: var(--white);
   }
 
   .section img{
