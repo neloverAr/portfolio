@@ -1,0 +1,38 @@
+function findMissingNumber(nums) {
+  if(areAllUnique(nums)&&membersInRange(nums)){
+      const n = nums.length;
+  
+  // Calculate the sum of all numbers from 0 to n
+  const totalSum = (n * (n + 1)) / 2;
+  
+  // Calculate the sum of the elements in the given array
+  const arraySum = nums.reduce((acc, num) => acc + num, 0);
+  
+  // The missing number is the difference between totalSum and arraySum
+  return totalSum - arraySum;
+  }
+}
+//////////
+function areAllUnique(arr) {
+  const seen = new Set();
+
+  for (const num of arr) {
+    if (seen.has(num)) {
+      return false; // If we've seen the number before, it's not unique
+    }
+    seen.add(num); // Otherwise, add it to the set of seen numbers
+  }
+
+  return true; // All numbers are unique
+}
+//////////
+function membersInRange(arr) {
+const n = arr.length;
+  for (const num of arr) {
+    if (num>n||num<0) {
+      return false; // If we've seen the number before, it's not unique
+    }
+  }
+
+  return true; // All numbers are unique
+}
