@@ -6,7 +6,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/Poppins-Regular.ttf);
+    src: url(./fonts/Poppins-Regular.ttf);
   }
 
   :root {
@@ -59,8 +59,13 @@
     color: var(--blue);
   }
 
+  .article{
+    padding: 20px;
+  }
+
   .article h1{
     color: var(--secondary);
+    font-weight:bolder;
   }
 
   .article h1 span{
@@ -68,7 +73,13 @@
   }
 
   .article p{
-    max-width: 500px;
+    max-width: 550px;
+    font-weight: 600;
+  }
+
+  .article p a{
+    color: var(--secondary);
+    text-decoration: none;
   }
 
   .ctaButtons{
@@ -88,7 +99,6 @@
 
   .hire{
     background-color: var(--secondary);
-    box-shadow: #008AA9;
     color: var(--white);
     margin-right: 10px;
     box-shadow: 0px 4px 2px 1px var(--blueOpacity);
@@ -106,19 +116,12 @@
   }
 
   .section img{
-    height: 300px;
-    width: 300px;
+    /* height: 300px; */
+    width: 30%;
   }
   
   
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 600px) {
-    .section img{
-      height: 200px;
-      width: 200px;
-      margin-top: 15px;
-    }
-  }
   
   @media screen and (max-width: 500px) {
     .navbar a {
@@ -128,13 +131,11 @@
     .section{
       flex-direction: column;
     }
-    .hire{
-      margin-top: 15px;
-    }
    .see{
       margin-top: 15px;
     }
     .section img{
+      width: 80%;
       margin-top: 15px;
     }
   }
