@@ -22,7 +22,7 @@
     font-family: 'Poppins';
   }
 
-  .header{
+  header{
     margin: 60px ;
   }
 
@@ -60,7 +60,7 @@
   }
 
   .article{
-    padding: 20px;
+    padding: 20px 0px;
   }
 
   .article h1{
